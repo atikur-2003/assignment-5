@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo App</title>
+    <title>netify</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
                     <img class="w-6 h-6" src="./assets/checkbox.png" alt="">
                     <span class="text-lg font-bold">23</span>
                 </div>
-                <div><img class="w-10 h-10 cursor-pointer" src="./assets/theme-btn.png" alt=""></div>
+                <div><img id="change-bg" class="w-10 h-10 cursor-pointer" src="./assets/theme-btn.png" alt=""></div>
             </div>
         </nav>
     </header>
@@ -36,14 +36,14 @@
     <main class="grid grid-cols-4 gap-5 mt-9">
         <section class="col-span-3 bg-[white] rounded-md">
            <div class="grid grid-cols-4 gap-5 py-7 px-6">
-            <div class="flex gap-3 items-center bg-[#F4F7FF] rounded-md px-3 py-5">
+            <div class="flex gap-3 items-center bg-[#F4F7FF] rounded-md px-2 py-5">
                 <div class="bg-[white] w-10 h-10 rounded-full flex items-center justify-center"><img class="w-5" src="./assets/checkbox.png" alt=""></div>
                 <div>
                     <p class="text-sm">Task Assigned </p>
                     <span class="font-extrabold text-xl text-[#00303C]">06</span>
                 </div>
             </div>
-            <div class="cursor-pointer col-span-2 flex gap-4 items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-md px-4 py-5">
+            <div id="discover-div" class="cursor-pointer col-span-2 flex gap-4 items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-md px-4 py-5">
                 <div><img class="w-14" src="./assets/board.png" alt=""></div>
                 <div>
                     <p class="text-white text-lg">Discover Something <br> New Today!</p>
@@ -193,5 +193,9 @@
         </section>
 
     </main>
+
+  
+
+    <script src="./script/index.js"></script>
 </body>
 </html>
