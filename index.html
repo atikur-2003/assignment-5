@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <style>
+        .poppins{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#f4f7ff] poppins px-20 py-5">
+    <header class="bg-[white] rounded-md px-6 py-3">
+        <nav class="flex justify-between">
+            <div class="flex gap-2 items-center cursor-pointer">
+                <img class="w-11 h-11" src="./assets/logo.png" alt="">
+                <h1 class="text-[#00303C] text-2xl">Dev <span class="font-extrabold">Board</span></h1>
+            </div>
+            <div class="flex gap-10 items-center">
+                <div class="flex gap-3">
+                    <img class="w-6 h-6" src="./assets/checkbox.png" alt="">
+                    <span class="text-lg font-bold">23</span>
+                </div>
+                <div><img class="w-10 h-10 cursor-pointer" src="./assets/theme-btn.png" alt=""></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="grid grid-cols-4 gap-5 mt-9">
+        <section class="col-span-3 bg-[white] rounded-md">
+           <div class="grid grid-cols-4 gap-5 py-7 px-6">
+            <div class="flex gap-3 items-center bg-[#F4F7FF] rounded-md px-3 py-5">
+                <div class="bg-[white] w-10 h-10 rounded-full flex items-center justify-center"><img class="w-5" src="./assets/checkbox.png" alt=""></div>
+                <div>
+                    <p class="text-sm">Task Assigned </p>
+                    <span class="font-extrabold text-xl text-[#00303C]">06</span>
+                </div>
+            </div>
+            <div class="cursor-pointer col-span-2 flex gap-4 items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-md px-4 py-5">
+                <div><img class="w-14" src="./assets/board.png" alt=""></div>
+                <div>
+                    <p class="text-white text-lg">Discover Something <br> New Today!</p>
+                </div>
+            </div>
+            <div class="flex gap-3 items-center rounded-md px-4 py-5 bg-[#F4F7FF] ">
+                <div  class="bg-[white] w-10 h-10 rounded-full flex items-center justify-center">
+                    <img class="w-5" src="./assets/calender.png" alt="">
+                </div>
+                <div>
+                    <p class="text-[#00303C]">Wed , <br>
+                       <span class="font-bold"> Jul 28 2025</span> </p>
+                </div>
+            </div>
+           </div>
+
+           <div class="border border-dashed border-[#3752FD33]"></div>
+
+           <div class="grid grid-cols-3 gap-5 py-7 px-6">
+            <div class="bg-[#F4F7FF] rounded-lg py-4 px-4 ">
+                <div><span class="bg-[#FFFFFF] px-2 rounded-md">ShopEase</span></div>
+                <div>
+                    <h1 class="text-[#00303C] text-lg my-5 font-semibold">Fix Mobile Button Issue </h1>
+                </div>
+                <div class="bg-[white] px-3 py-3 rounded-md">
+                    <p class="text-sm">Debug using Chrome DevTools, check for overlapping...</p>
+                </div>
+                <div class="border border-dashed border-[#3752FD33] my-4"></div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                        <span class="text-[#00303C] text-sm font-medium">21 March 2025</span>
+                    </div>
+                    <div>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-2 px-2 text-sm">Complete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F7FF] rounded-lg py-4 px-4 ">
+                <div><span class="bg-[#FFFFFF] px-2 rounded-md">CloudSync</span></div>
+                <div>
+                    <h1 class="text-[#00303C] text-lg my-5 font-semibold">Add Dark Mode </h1>
+                </div>
+                <div class="bg-[white] px-3 py-3 rounded-md">
+                    <p class="text-sm">Store the user's preference in localStorage, update CSS....</p>
+                </div>
+                <div class="border border-dashed border-[#3752FD33] my-4"></div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                        <span class="text-[#00303C] text-sm font-medium">21 March 2025</span>
+                    </div>
+                    <div>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-2 px-2 text-sm">Complete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F7FF] rounded-lg py-4 px-4 ">
+                <div><span class="bg-[#FFFFFF] px-2 rounded-md">SwiftPay</span></div>
+                <div>
+                    <h1 class="text-[#00303C] text-lg my-5 font-semibold">Optimize  Home page</h1>
+                </div>
+                <div class="bg-[white] px-3 py-3 rounded-md">
+                    <p class="text-sm">Debug using Chrome DevTools, check for overlapping...</p>
+                </div>
+                <div class="border border-dashed border-[#3752FD33] my-4"></div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                        <span class="text-[#00303C] text-sm font-medium">21 March 2025</span>
+                    </div>
+                    <div>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-2 px-2 text-sm">Complete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F7FF] rounded-lg py-4 px-4 ">
+                <div><span class="bg-[#FFFFFF] px-2 rounded-md">Meta</span></div>
+                <div>
+                    <h1 class="text-[#00303C] text-lg my-5 font-semibold">Add new emoji 🤲</h1>
+                </div>
+                <div class="bg-[white] px-3 py-3 rounded-md">
+                    <p class="text-sm">Debug using Chrome DevTools, check for overlapping...</p>
+                </div>
+                <div class="border border-dashed border-[#3752FD33] my-4"></div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                        <span class="text-[#00303C] text-sm font-medium">21 March 2025</span>
+                    </div>
+                    <div>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-2 px-2 text-sm">Complete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F7FF] rounded-lg py-4 px-4 ">
+                <div><span class="bg-[#FFFFFF] px-2 rounded-md">Google LLC</span></div>
+                <div>
+                    <h1 class="text-[#00303C] text-lg my-5 font-semibold">Integrate OpenAI API</h1>
+                </div>
+                <div class="bg-[white] px-3 py-3 rounded-md">
+                    <p class="text-sm">Debug using Chrome DevTools, check for overlapping...</p>
+                </div>
+                <div class="border border-dashed border-[#3752FD33] my-4"></div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                        <span class="text-[#00303C] text-sm font-medium">21 March 2025</span>
+                    </div>
+                    <div>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-2 px-2 text-sm">Complete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F7FF] rounded-lg py-4 px-4 ">
+                <div><span class="bg-[#FFFFFF] px-2 rounded-md">Glassdoar</span></div>
+                <div>
+                    <h1 class="text-[#00303C] text-lg my-5 font-semibold">Improve Job searching</h1>
+                </div>
+                <div class="bg-[white] px-3 py-3 rounded-md">
+                    <p class="text-sm">Debug using Chrome DevTools, check for overlapping...</p>
+                </div>
+                <div class="border border-dashed border-[#3752FD33] my-4"></div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="text-[#00303C] text-sm font-normal">Deadline</p>
+                        <span class="text-[#00303C] text-sm font-medium">21 March 2025</span>
+                    </div>
+                    <div>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-2 px-2 text-sm">Complete</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+        <section class="bg-[white] rounded-md text-center">
+            <div class=" py-7 px-6">
+                <div class="flex justify-center items-center gap-4">
+                    <img class="w-5" src="./assets/activity.png" alt="">
+                    <h3 class="text-[#00303C] text-lg font-medium">Activity Log</h3>
+                </div>
+                <div class="mt-5">
+                    <button class="bg-[#3752FD] text-white rounded-lg py-2 px-3">Clear History</button>
+                </div>
+            </div>
+            <div class="border border-dashed border-[#3752FD33]"></div>
+        </section>
+
+    </main>
+</body>
+</html>
